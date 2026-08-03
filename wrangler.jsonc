@@ -7,5 +7,14 @@
   "assets": {
     "directory": "./public",
     "not_found_handling": "404-page"
-  }
+  },
+
+  // Dominios propios. Wrangler crea el registro DNS y el certificado al desplegar.
+  "routes": [
+    { "pattern": "rivatech.mx", "custom_domain": true },
+    { "pattern": "www.rivatech.mx", "custom_domain": true }
+  ],
+
+  // El sitio se sirve solo desde rivatech.mx, no desde workers.dev
+  "workers_dev": false
 }
