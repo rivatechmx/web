@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="RIVA Tech isotipo">
+  <title>RIVA Tech</title>
+  <g fill="none" stroke="#0F52BA" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 13 L12 35" />
+    <path d="M12 13 L34 24" />
+    <path d="M12 35 L34 24" />
+  </g>
+  <circle cx="12" cy="13" r="5" fill="#0F52BA"/>
+  <circle cx="12" cy="35" r="5" fill="#0E4F63"/>
+  <circle cx="34" cy="24" r="5.6" fill="#F5F7FA" stroke="#14B8A6" stroke-width="2.8"/>
+</svg>

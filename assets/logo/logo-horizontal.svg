@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" width="260" height="48" role="img" aria-label="RIVA Tech">
+  <title>RIVA Tech</title>
+  <g fill="none" stroke="#0F52BA" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 13 L12 35" />
+    <path d="M12 13 L34 24" />
+    <path d="M12 35 L34 24" />
+  </g>
+  <circle cx="12" cy="13" r="5" fill="#0F52BA"/>
+  <circle cx="12" cy="35" r="5" fill="#0E4F63"/>
+  <circle cx="34" cy="24" r="5.6" fill="#F5F7FA" stroke="#14B8A6" stroke-width="2.8"/>
+  <text x="54" y="31.5" font-family="Plus Jakarta Sans, Inter, Segoe UI, sans-serif" font-size="23" font-weight="800" letter-spacing="-0.5" fill="#0B1B2B">RIVA</text>
+  <text x="128" y="31.5" font-family="Plus Jakarta Sans, Inter, Segoe UI, sans-serif" font-size="23" font-weight="500" letter-spacing="1.5" fill="#5A6B7B">TECH</text>
+</svg>

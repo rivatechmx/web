@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0F52BA">
+
+  <title>RIVA Tech — Desarrollo de software a la medida para empresas</title>
+  <meta name="description"
+    content="RIVA Tech desarrolla software a la medida, aplicaciones web y móviles, análisis de datos e integraciones para empresas. Consultoría tecnológica en La Paz, Baja California Sur.">
+  <meta name="keywords"
+    content="desarrollo de software a la medida, software empresarial, desarrollo web, aplicaciones móviles, análisis de datos, business intelligence, consultoría tecnológica, integraciones API, ERP, CRM, La Paz BCS, México">
+  <meta name="author" content="RIVA Tech">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://rivatech.mx/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="RIVA Tech">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:url" content="https://rivatech.mx/">
+  <meta property="og:title" content="RIVA Tech — Software a la medida que impulsa tu negocio">
+  <meta property="og:description"
+    content="Diseñamos y construimos software empresarial a la medida: sistemas web, aplicaciones móviles, dashboards e integraciones.">
+  <meta property="og:image" content="https://rivatech.mx/assets/images/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="RIVA Tech — desarrollo de software a la medida">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RIVA Tech — Software a la medida que impulsa tu negocio">
+  <meta name="twitter:description"
+    content="Diseñamos y construimos software empresarial a la medida: sistemas web, aplicaciones móviles, dashboards e integraciones.">
+  <meta name="twitter:image" content="https://rivatech.mx/assets/images/og-cover.png">
+
+  <!-- Iconos y manifest -->
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo/favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Datos estructurados -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "RIVA Tech",
+  "description": "Desarrollo de software a la medida, aplicaciones web y móviles, análisis de datos, consultoría tecnológica e integraciones para empresas.",
+  "url": "https://rivatech.mx/",
+  "email": "contacto@rivatech.mx",
+  "areaServed": "MX",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "La Paz",
+    "addressRegion": "Baja California Sur",
+    "addressCountry": "MX"
+  },
+  "knowsAbout": [
+    "Desarrollo de software a la medida",
+    "Desarrollo web empresarial",
+    "Aplicaciones móviles",
+    "Business Intelligence",
+    "Integraciones API",
+    "Consultoría tecnológica"
+  ]
+}
+</script>
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+     PRELOADER
+     ========================================================================== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <svg class="loader__mark" viewBox="0 0 48 48" aria-hidden="true">
+        <g fill="none" stroke="#0F52BA" stroke-width="2.6" stroke-linecap="round">
+          <path d="M12 13 L12 35" />
+          <path d="M12 13 L34 24" />
+          <path d="M12 35 L34 24" />
+        </g>
+        <circle cx="12" cy="13" r="5" fill="#0F52BA" />
+        <circle cx="12" cy="35" r="5" fill="#0E4F63" />
+        <circle cx="34" cy="24" r="5.6" fill="#F5F7FA" stroke="#14B8A6" stroke-width="2.8" />
+      </svg>
+      <div class="loader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ==========================================================================
+     HEADER / NAVBAR
+     Versión parcial reutilizable en components/header.html
+     ========================================================================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+
+      <a class="brand" href="#inicio" aria-label="RIVA Tech — inicio">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <g fill="none" stroke="#0F52BA" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 13 L12 35" />
+            <path d="M12 13 L34 24" />
+            <path d="M12 35 L34 24" />
+          </g>
+          <circle cx="12" cy="13" r="5" fill="#0F52BA" />
+          <circle cx="12" cy="35" r="5" fill="#0E4F63" />
+          <circle cx="34" cy="24" r="5.6" fill="#F5F7FA" stroke="#14B8A6" stroke-width="2.8" />
+        </svg>
+        <span class="brand__text"><strong>RIVA</strong><span>TECH</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a class="nav__link" href="#inicio">Inicio</a>
+        <a class="nav__link" href="#servicios">Servicios</a>
+        <a class="nav__link" href="#experiencia">Experiencia</a>
+        <a class="nav__link" href="#proceso">Proceso</a>
+        <a class="nav__link" href="#nosotros">Nosotros</a>
+        <a class="nav__link" href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn--primary btn--sm nav__cta" href="#contacto">
+        Hablemos
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M13 6l6 6-6 6" />
+        </svg>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+        aria-controls="navMobile">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+    <div class="nav__progress" id="navProgress" aria-hidden="true"></div>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="nav__mobile" id="navMobile">
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+    <a class="btn btn--primary btn--block" href="#contacto">Hablemos</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ==========================================================================
+     HERO
+     ========================================================================== -->
+    <section class="hero" id="inicio">
+      <div class="bg-grid" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+
+        <div>
+          <!--<span class="eyebrow" data-hero="1">Desarrollo de software empresarial</span>-->
+
+          <h1 class="hero__title" data-hero="2">
+            Construimos el software<br>
+            que tu empresa <em>ya necesita</em>
+          </h1>
+
+          <p class="hero__lead" data-hero="3">
+            Diseñamos y desarrollamos sistemas a la medida para empresas que dejaron atrás
+            las hojas de cálculo y los procesos manuales. Sin plantillas, sin módulos que
+            nadie usa: exactamente lo que tu operación requiere.
+          </p>
+
+          <div class="btn-row" data-hero="4">
+            <a class="btn btn--primary" href="#contacto">
+              Solicitar cotización
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a class="btn btn--ghost" href="#servicios">Nuestros servicios</a>
+          </div>
+
+          <p class="hero__note" data-hero="5">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 6 9 17l-5-5" />
+            </svg>
+            Primera consulta y estimación sin costo ni compromiso.
+          </p>
+
+          <div class="hero__stats" data-hero="5">
+            <div class="stat">
+              <span class="stat__num"><span data-count="10" data-suffix="+">0</span></span>
+              <span class="stat__label">Años de experiencia del equipo</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num"><span data-count="4" data-suffix="">0</span></span>
+              <span class="stat__label">Industrias atendidas</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num"><span data-count="100" data-suffix="%">0</span></span>
+              <span class="stat__label">Código propio, sin plantillas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__art" data-hero="6" data-parallax>
+          <!-- Ilustración: arquitectura de software (sin fotografías de stock) -->
+          <svg viewBox="0 0 560 480" role="img"
+            aria-label="Ilustración de una arquitectura de software: interfaz, servicios conectados y datos"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="gWin" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#FFFFFF" />
+                <stop offset="1" stop-color="#F2F6FC" />
+              </linearGradient>
+              <linearGradient id="gBar" x1="0" y1="1" x2="0" y2="0">
+                <stop offset="0" stop-color="#0F52BA" />
+                <stop offset="1" stop-color="#4D8DF6" />
+              </linearGradient>
+              <linearGradient id="gBar2" x1="0" y1="1" x2="0" y2="0">
+                <stop offset="0" stop-color="#0E4F63" />
+                <stop offset="1" stop-color="#14B8A6" />
+              </linearGradient>
+            </defs>
+
+            <!-- Halo -->
+            <circle cx="290" cy="215" r="185" fill="#0F52BA" opacity="0.04" />
+            <circle class="art-ring" cx="290" cy="215" r="140" fill="none" stroke="#14B8A6" stroke-width="1.5"
+              opacity="0.35" />
+
+            <!-- Ventana principal -->
+            <g class="art-float">
+              <rect x="70" y="60" width="360" height="248" rx="18" fill="url(#gWin)" stroke="#E2E8F0"
+                stroke-width="1.5" />
+              <path d="M70 90 a18 18 0 0 1 18-18 h324 a18 18 0 0 1 18 18 z" fill="#EEF2F7" />
+              <circle cx="94" cy="76" r="4.5" fill="#CBD5E1" />
+              <circle cx="110" cy="76" r="4.5" fill="#CBD5E1" />
+              <circle cx="126" cy="76" r="4.5" fill="#CBD5E1" />
+              <rect x="160" y="70" width="150" height="12" rx="6" fill="#E2E8F0" />
+
+              <!-- Panel lateral -->
+              <rect x="86" y="106" width="76" height="186" rx="10" fill="#F5F7FA" />
+              <rect x="97" y="120" width="46" height="7" rx="3.5" fill="#0F52BA" opacity="0.85" />
+              <rect x="97" y="139" width="54" height="6" rx="3" fill="#CBD5E1" />
+              <rect x="97" y="155" width="40" height="6" rx="3" fill="#CBD5E1" />
+              <rect x="97" y="171" width="50" height="6" rx="3" fill="#CBD5E1" />
+              <rect x="97" y="187" width="36" height="6" rx="3" fill="#CBD5E1" />
+              <rect x="97" y="203" width="46" height="6" rx="3" fill="#CBD5E1" />
+
+              <!-- Gráfica de barras -->
+              <rect x="178" y="106" width="234" height="112" rx="12" fill="#FFFFFF" stroke="#EDF1F6"
+                stroke-width="1.2" />
+              <rect x="192" y="118" width="62" height="7" rx="3.5" fill="#CBD5E1" />
+              <rect x="196" y="176" width="18" height="28" rx="5" fill="url(#gBar)" opacity="0.55" />
+              <rect x="224" y="160" width="18" height="44" rx="5" fill="url(#gBar)" opacity="0.7" />
+              <rect x="252" y="168" width="18" height="36" rx="5" fill="url(#gBar)" opacity="0.6" />
+              <rect x="280" y="144" width="18" height="60" rx="5" fill="url(#gBar)" />
+              <rect x="308" y="152" width="18" height="52" rx="5" fill="url(#gBar2)" opacity="0.85" />
+              <rect x="336" y="132" width="18" height="72" rx="5" fill="url(#gBar2)" />
+              <rect x="364" y="150" width="18" height="54" rx="5" fill="url(#gBar2)" opacity="0.7" />
+
+              <!-- Tarjetas KPI -->
+              <rect x="178" y="230" width="112" height="62" rx="12" fill="#FFFFFF" stroke="#EDF1F6"
+                stroke-width="1.2" />
+              <rect x="192" y="244" width="40" height="6" rx="3" fill="#CBD5E1" />
+              <rect x="192" y="258" width="62" height="12" rx="4" fill="#0F52BA" opacity="0.8" />
+              <rect x="300" y="230" width="112" height="62" rx="12" fill="#FFFFFF" stroke="#EDF1F6"
+                stroke-width="1.2" />
+              <rect x="314" y="244" width="40" height="6" rx="3" fill="#CBD5E1" />
+              <rect x="314" y="258" width="52" height="12" rx="4" fill="#0F9B8E" opacity="0.85" />
+            </g>
+
+            <!-- Tarjeta flotante: código -->
+            <g class="art-float art-float--fast">
+              <rect x="18" y="256" width="188" height="112" rx="15" fill="#0B1B2B" stroke="#0B1B2B" />
+              <circle cx="40" cy="278" r="3.6" fill="#4D8DF6" />
+              <circle cx="52" cy="278" r="3.6" fill="#2DD4BF" />
+              <rect x="36" y="296" width="96" height="6" rx="3" fill="#4D8DF6" opacity="0.9" />
+              <rect class="art-blink" x="36" y="311" width="128" height="6" rx="3" fill="#5A6B7B" />
+              <rect x="48" y="326" width="76" height="6" rx="3" fill="#2DD4BF" opacity="0.85" />
+              <rect class="art-blink art-blink--b" x="48" y="341" width="108" height="6" rx="3" fill="#5A6B7B" />
+            </g>
+
+            <!-- Tarjeta flotante: móvil -->
+            <g class="art-float art-float--slow">
+              <rect x="404" y="286" width="96" height="164" rx="18" fill="#FFFFFF" stroke="#E2E8F0"
+                stroke-width="1.5" />
+              <rect x="436" y="296" width="32" height="5" rx="2.5" fill="#E2E8F0" />
+              <rect x="416" y="316" width="72" height="34" rx="9" fill="#EEF4FE" />
+              <rect x="426" y="328" width="42" height="6" rx="3" fill="#0F52BA" opacity="0.7" />
+              <rect x="416" y="360" width="72" height="7" rx="3.5" fill="#E2E8F0" />
+              <rect x="416" y="376" width="52" height="7" rx="3.5" fill="#E2E8F0" />
+              <rect x="416" y="404" width="72" height="26" rx="9" fill="#0F52BA" />
+              <rect x="436" y="414" width="32" height="6" rx="3" fill="#FFFFFF" opacity="0.9" />
+            </g>
+
+            <!-- Nodos y conexiones (identidad de marca) -->
+            <g class="art-flow" fill="none" stroke="#0F52BA" stroke-width="2" stroke-linecap="round" opacity="0.5">
+              <path d="M206 300 C 250 340, 300 350, 404 340" />
+              <path d="M120 240 C 60 260, 40 250, 22 262" />
+            </g>
+            <circle cx="206" cy="300" r="6" fill="#0F52BA" />
+            <circle cx="404" cy="340" r="6" fill="#0F9B8E" />
+
+            <!-- Badge de estado -->
+            <g class="art-float art-float--slow">
+              <rect x="380" y="34" width="150" height="42" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.4" />
+              <circle class="art-blink art-blink--c" cx="402" cy="55" r="6" fill="#0F9B8E" />
+              <rect x="418" y="46" width="86" height="6" rx="3" fill="#0B1B2B" opacity="0.75" />
+              <rect x="418" y="59" width="58" height="5" rx="2.5" fill="#CBD5E1" />
+            </g>
+          </svg>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+     SERVICIOS
+     ========================================================================== -->
+    <section class="section section--surface" id="servicios">
+      <div class="container">
+
+        <div class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Servicios</span>
+          <h2 class="section-title">Todo lo que tu operación necesita, <span class="text-accent">bajo un mismo
+              equipo</span></h2>
+          <p class="section-sub">
+            Desde la primera línea de código hasta el soporte del día a día. Trabajamos con
+            tecnologías modernas y arquitecturas que crecen contigo.
+          </p>
+        </div>
+
+        <div class="grid grid--3" data-reveal-group>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m8 6-6 6 6 6M16 6l6 6-6 6M13.5 4l-3 16" />
+              </svg>
+            </div>
+            <h3 class="card__title">Desarrollo de software a la medida</h3>
+            <p class="card__text">
+              Aplicaciones diseñadas específicamente para las necesidades de cada empresa.
+              Modelamos tu proceso real —no uno genérico— y construimos sobre él.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">Análisis funcional</li>
+              <li class="tag">Arquitectura</li>
+              <li class="tag">Desarrollo</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4M2 8h20" />
+              </svg>
+            </div>
+            <h3 class="card__title">Desarrollo web</h3>
+            <p class="card__text">
+              Sistemas empresariales, portales y paneles administrativos accesibles desde
+              cualquier navegador, con control granular de usuarios y permisos.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">Sistemas empresariales</li>
+              <li class="tag">Portales</li>
+              <li class="tag">Paneles administrativos</li>
+              <li class="tag">Dashboards</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2.5" />
+                <path d="M11 18h2" />
+              </svg>
+            </div>
+            <h3 class="card__title">Desarrollo mobile</h3>
+            <p class="card__text">
+              Aplicaciones empresariales para Android e iOS: operación en campo, captura
+              en sitio y acceso a tu información desde donde estés.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">Android</li>
+              <li class="tag">iOS</li>
+              <li class="tag">Apps empresariales</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+                <path d="M7 15l4-5 3.5 3L21 6" />
+              </svg>
+            </div>
+            <h3 class="card__title">Análisis de datos</h3>
+            <p class="card__text">
+              Convertimos los datos que ya generas en decisiones. Dashboards claros,
+              indicadores accionables y reportes que se generan solos.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">Dashboards</li>
+              <li class="tag">Business Intelligence</li>
+              <li class="tag">KPIs</li>
+              <li class="tag">Reportes automatizados</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a3 3 0 0 1 3 3v1.2a6 6 0 0 1 2 1.2l1-.6a3 3 0 0 1 3 5.2l-1 .6a6 6 0 0 1 0 2.4" />
+                <circle cx="12" cy="12" r="3.2" />
+                <path d="M4.8 8.4 3.9 7.8a3 3 0 0 1 3-5.2M4.8 15.6l-.9.6a3 3 0 0 0 3 5.2l1-.6a6 6 0 0 0 2 1.2V19" />
+              </svg>
+            </div>
+            <h3 class="card__title">Consultoría tecnológica</h3>
+            <p class="card__text">
+              Diagnóstico honesto de tu situación actual y una ruta clara: qué modernizar,
+              qué automatizar y qué conviene dejar como está.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">Arquitectura</li>
+              <li class="tag">Optimización de procesos</li>
+              <li class="tag">Modernización</li>
+              <li class="tag">Transformación digital</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 17H7A5 5 0 0 1 7 7h2M15 7h2a5 5 0 0 1 0 10h-2M8 12h8" />
+              </svg>
+            </div>
+            <h3 class="card__title">Integraciones</h3>
+            <p class="card__text">
+              Conectamos tus sistemas para que la información fluya sin capturas dobles:
+              APIs, ERP, CRM, pasarelas de pago y servicios externos.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">APIs</li>
+              <li class="tag">ERP</li>
+              <li class="tag">CRM</li>
+              <li class="tag">Pasarelas de pago</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+     EXPERIENCIA
+     ========================================================================== -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container">
+
+        <div class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Experiencia</span>
+          <h2 class="section-title">Conocemos la operación <span class="text-accent">desde adentro</span></h2>
+          <p class="section-sub">
+            Nuestro equipo ha construido soluciones empresariales completas en distintos
+            sectores. No llegamos a aprender tu negocio desde cero: ya hemos resuelto
+            problemas parecidos.
+          </p>
+        </div>
+
+        <div class="grid grid--2" data-reveal-group>
+
+          <article class="exp-card">
+            <header class="exp-card__head">
+              <div class="exp-card__icon" aria-hidden="true">
+                <svg aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21h18M5 21V7l7-4 7 4v14" />
+                  <path d="M9 21v-5h6v5M9 10h.01M12 10h.01M15 10h.01M9 13h.01M12 13h.01M15 13h.01" />
+                </svg>
+              </div>
+              <h3 class="exp-card__title">Industria hotelera</h3>
+            </header>
+            <p class="card__text" style="margin-bottom:var(--sp-5)">
+              Soluciones que abarcan todo el ciclo operativo de un hotel, del primer contacto
+              del huésped hasta el reporte de cierre.
+            </p>
+            <ul class="check-list">
+              <li>Reservaciones y disponibilidad</li>
+              <li>Check-in y check-out</li>
+              <li>Administración de huéspedes</li>
+              <li>Control de habitaciones</li>
+              <li>Facturación</li>
+              <li>Reportes operativos</li>
+            </ul>
+          </article>
+
+          <article class="exp-card">
+            <header class="exp-card__head">
+              <div class="exp-card__icon" aria-hidden="true">
+                <svg aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 4H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
+                  <path d="M8 2v4M16 2v4M12 11v6M9 14h6" />
+                </svg>
+              </div>
+              <h3 class="exp-card__title">Sector salud</h3>
+            </header>
+            <p class="card__text" style="margin-bottom:var(--sp-5)">
+              Sistemas médicos pensados para consultorios y clínicas con varios
+              especialistas trabajando en paralelo.
+            </p>
+            <ul class="check-list">
+              <li>Agenda de pacientes</li>
+              <li>Administración de consultorios</li>
+              <li>Expedientes clínicos</li>
+              <li>Múltiples especialistas</li>
+              <li>Control de citas</li>
+            </ul>
+          </article>
+
+          <article class="exp-card">
+            <header class="exp-card__head">
+              <div class="exp-card__icon" aria-hidden="true">
+                <svg aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 8 12 3 3 8v8l9 5 9-5V8z" />
+                  <path d="m3 8 9 5 9-5M12 13v8" />
+                </svg>
+              </div>
+              <h3 class="exp-card__title">Inventarios y almacenes</h3>
+            </header>
+            <p class="card__text" style="margin-bottom:var(--sp-5)">
+              Trazabilidad real de existencias: saber qué hay, dónde está y a dónde se movió,
+              en el momento en que ocurre.
+            </p>
+            <ul class="check-list">
+              <li>Control de almacenes</li>
+              <li>Existencias en tiempo real</li>
+              <li>Entradas y salidas</li>
+              <li>Compras</li>
+              <li>Reportes de movimientos</li>
+            </ul>
+          </article>
+
+          <article class="exp-card">
+            <header class="exp-card__head">
+              <div class="exp-card__icon" aria-hidden="true">
+                <svg aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21h18M4 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16M14 10h4a2 2 0 0 1 2 2v9" />
+                  <path d="M8 7h2M8 11h2M8 15h2M17 14h.01M17 18h.01" />
+                </svg>
+              </div>
+              <h3 class="exp-card__title">Sistemas empresariales</h3>
+            </header>
+            <p class="card__text" style="margin-bottom:var(--sp-5)">
+              ERP y plataformas internas que ordenan la administración y automatizan
+              lo que hoy consume horas de tu equipo.
+            </p>
+            <ul class="check-list">
+              <li>ERP y procesos internos</li>
+              <li>Automatización administrativa</li>
+              <li>Facturación</li>
+              <li>Inventarios</li>
+              <li>Usuarios y roles</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+     PROCESO
+     ========================================================================== -->
+    <section class="section section--surface" id="proceso">
+      <div class="container">
+
+        <div class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Nuestro proceso</span>
+          <h2 class="section-title">Siete pasos, <span class="text-accent">cero sorpresas</span></h2>
+          <p class="section-sub">
+            Un método probado que mantiene el proyecto visible y predecible. Sabes en qué
+            etapa estamos y qué sigue, en todo momento.
+          </p>
+        </div>
+
+        <ol class="timeline" data-reveal-group>
+
+          <li class="step">
+            <span class="step__num">1</span>
+            <div class="step__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3.5-3.5" />
+              </svg>
+            </div>
+            <h3 class="step__title">Descubrimiento</h3>
+            <p class="step__text">Entendemos tu operación, tus procesos y el problema real que hay que resolver.</p>
+          </li>
+
+          <li class="step">
+            <span class="step__num">2</span>
+            <div class="step__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
+                <path d="M10 7h4M10 11h4M10 15h2" />
+              </svg>
+            </div>
+            <h3 class="step__title">Planeación</h3>
+            <p class="step__text">Alcance, entregables, tiempos y costos por escrito antes de escribir código.</p>
+          </li>
+
+          <li class="step">
+            <span class="step__num">3</span>
+            <div class="step__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" />
+                <circle cx="12" cy="12" r="2.6" />
+              </svg>
+            </div>
+            <h3 class="step__title">Diseño</h3>
+            <p class="step__text">Prototipos navegables de la interfaz. Validas antes de que exista el sistema.</p>
+          </li>
+
+          <li class="step">
+            <span class="step__num">4</span>
+            <div class="step__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m8 6-6 6 6 6M16 6l6 6-6 6" />
+              </svg>
+            </div>
+            <h3 class="step__title">Desarrollo</h3>
+            <p class="step__text">Entregas parciales frecuentes para que veas el avance funcionando.</p>
+          </li>
+
+          <li class="step">
+            <span class="step__num">5</span>
+            <div class="step__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 2h6M10 2v6.5L5 18a2.5 2.5 0 0 0 2.2 3.7h9.6A2.5 2.5 0 0 0 19 18l-5-9.5V2" />
+                <path d="M7 15h10" />
+              </svg>
+            </div>
+            <h3 class="step__title">Pruebas</h3>
+            <p class="step__text">Verificación funcional y de rendimiento con datos reales de tu operación.</p>
+          </li>
+
+          <li class="step">
+            <span class="step__num">6</span>
+            <div class="step__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.9.7-2.2-.1-3-.8-.8-2.1-.8-2.9 0z" />
+                <path d="M12 15 9 12c1-4 3-7 8-9 0 5-2 8-6 9zM15 12h3v4M9 12H5V9" />
+              </svg>
+            </div>
+            <h3 class="step__title">Implementación</h3>
+            <p class="step__text">Puesta en marcha, migración de datos y capacitación de tu equipo.</p>
+          </li>
+
+          <li class="step">
+            <span class="step__num">7</span>
+            <div class="step__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="21" height="21" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
+                <path d="M20 16a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2zM4 16a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2z" />
+              </svg>
+            </div>
+            <h3 class="step__title">Soporte</h3>
+            <p class="step__text">Acompañamiento continuo, mejoras y evolución del sistema con el tiempo.</p>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+     NOSOTROS / POR QUÉ RIVA TECH
+     ========================================================================== -->
+    <section class="section section--alt" id="nosotros">
+      <div class="container why">
+
+        <div class="section-head" style="margin-bottom:0" data-reveal="left">
+          <span class="eyebrow">Nosotros</span>
+          <h2 class="section-title">¿Por qué elegir <span class="text-accent">RIVA Tech</span>?</h2>
+          <p class="section-sub">
+            Somos un equipo pequeño y especializado, y eso es una ventaja: hablas
+            directamente con quien construye tu sistema. Sin capas intermedias, sin
+            cuentas que se pierden en un portafolio de cien clientes.
+          </p>
+          <div class="btn-row" style="margin-top:var(--sp-6)">
+            <a class="btn btn--primary" href="#contacto">
+              Agenda una llamada
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="reason-list" data-reveal-group>
+
+          <article class="reason">
+            <div class="reason__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9l-3.8 3.8z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="reason__title">Software realmente a la medida</h3>
+              <p class="reason__text">Sin módulos genéricos que nadie usa. Construimos sobre tu proceso, no al revés.
+              </p>
+            </div>
+          </article>
+
+          <article class="reason">
+            <div class="reason__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l2-4.9A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="reason__title">Comunicación cercana</h3>
+              <p class="reason__text">Hablas con el equipo que desarrolla, no con un intermediario. Avances claros y
+                frecuentes.</p>
+            </div>
+          </article>
+
+          <article class="reason">
+            <div class="reason__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5.5" rx="8" ry="3" />
+                <path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13" />
+                <path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="reason__title">Arquitectura escalable</h3>
+              <p class="reason__text">Diseñado para crecer: más usuarios, más datos y más módulos sin rehacer todo.</p>
+            </div>
+          </article>
+
+          <article class="reason">
+            <div class="reason__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2 4 5.5v6c0 5 3.4 9.4 8 10.5 4.6-1.1 8-5.5 8-10.5v-6L12 2z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="reason__title">Buenas prácticas</h3>
+              <p class="reason__text">Control de versiones, pruebas y estándares de seguridad desde el primer commit.
+              </p>
+            </div>
+          </article>
+
+          <article class="reason">
+            <div class="reason__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <path d="M14 2v6h6M9.5 13l-2 2 2 2M14.5 13l2 2-2 2" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="reason__title">Código limpio y documentado</h3>
+              <p class="reason__text">Mantenible por cualquier equipo. Tu sistema no queda secuestrado por quien lo
+                hizo.</p>
+            </div>
+          </article>
+
+          <article class="reason">
+            <div class="reason__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="reason__title">Experiencia empresarial</h3>
+              <p class="reason__text">Hotelería, salud, inventarios y ERP. Conocemos los detalles que hacen fallar un
+                proyecto.</p>
+            </div>
+          </article>
+
+          <article class="reason">
+            <div class="reason__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 15v-3a8 8 0 0 1 16 0v3" />
+                <path d="M20 16a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2zM4 16a2 2 0 0 0 2 2h1v-5H6a2 2 0 0 0-2 2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="reason__title">Soporte continuo</h3>
+              <p class="reason__text">No desaparecemos tras la entrega. Acompañamos la evolución del sistema.</p>
+            </div>
+          </article>
+
+          <article class="reason">
+            <div class="reason__icon" aria-hidden="true">
+              <svg aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 7v5l3.2 2" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="reason__title">Tiempos que se cumplen</h3>
+              <p class="reason__text">Estimamos con margen realista y avisamos a tiempo si algo cambia.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+     CTA
+     ========================================================================== -->
+    <section class="section cta">
+      <div class="container cta__inner" data-reveal="scale">
+        <h2 class="cta__title">¿Listo para digitalizar tu empresa?</h2>
+        <p class="cta__text">
+          Cuéntanos qué proceso te está costando tiempo o dinero. Te respondemos con una
+          propuesta concreta: alcance, tiempos y costo estimado.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn--light" href="#contacto">
+            Solicitar una cotización
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+          <a class="btn btn--outline-light" href="mailto:contacto@rivatech.mx">Escribir un correo</a>
+        </div>
+        <p class="cta__meta">Respuesta en menos de 24 horas hábiles · Sin compromiso</p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+     CONTACTO
+     ========================================================================== -->
+    <section class="section" id="contacto">
+      <div class="container">
+
+        <div class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Contacto</span>
+          <h2 class="section-title">Hablemos de tu proyecto</h2>
+          <p class="section-sub">
+            Escríbenos con lo que tengas: una idea, un problema o un sistema que ya no da más.
+            Nosotros nos encargamos de aterrizarlo.
+          </p>
+        </div>
+
+        <div class="contact">
+
+          <!-- Datos de contacto -->
+          <aside class="contact__aside" data-reveal="left">
+            <h3 class="card__title" style="margin-bottom:var(--sp-3)">Datos de contacto</h3>
+            <p>
+              Atendemos proyectos en todo México, de forma remota o presencial en Baja California Sur.
+            </p>
+
+            <div class="info-list">
+              <div class="info">
+                <div class="info__icon" aria-hidden="true">
+                  <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="info__label">Ubicación</span>
+                  <span class="info__value">La Paz, Baja California Sur, México</span>
+                </div>
+              </div>
+
+              <div class="info">
+                <div class="info__icon" aria-hidden="true">
+                  <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m2 7 10 6 10-6" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="info__label">Correo</span>
+                  <a class="info__value" href="mailto:contacto@rivatech.mx">contacto@rivatech.mx</a>
+                </div>
+              </div>
+
+              <div class="info">
+                <div class="info__icon" aria-hidden="true">
+                  <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3.2 2" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="info__label">Horario</span>
+                  <span class="info__value">Lunes a viernes, 9:00 – 18:00 (GMT-7)</span>
+                </div>
+              </div>
+            </div>
+
+            <a class="btn btn--ghost"
+              href="mailto:contacto@rivatech.mx?subject=Solicitud%20de%20cotizaci%C3%B3n%20%E2%80%94%20RIVA%20Tech">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m2 7 10 6 10-6" />
+              </svg>
+              Enviar un correo
+            </a>
+
+            <!-- ============================================================
+             REDES SOCIALES — desactivadas por ahora.
+             Para activarlas: descomenta este bloque y coloca las URLs.
+             ============================================================
+        <div style="margin-top:var(--sp-6)">
+          <span class="info__label" style="display:block;margin-bottom:var(--sp-3)">Síguenos</span>
+          <div class="socials">
+            <a href="https://www.linkedin.com/company/rivatech" target="_blank" rel="noopener" aria-label="RIVA Tech en LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05a4.2 4.2 0 0 1 3.78-2.08c4.04 0 4.79 2.66 4.79 6.12V21h-4v-5.5c0-1.31-.02-3-1.83-3-1.84 0-2.12 1.43-2.12 2.9V21h-4z"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/rivatech" target="_blank" rel="noopener" aria-label="RIVA Tech en Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.75-1.6 1.5V12h2.7l-.43 2.9h-2.3v7A10 10 0 0 0 22 12z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/rivatech" target="_blank" rel="noopener" aria-label="RIVA Tech en Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/52XXXXXXXXXX" target="_blank" rel="noopener" aria-label="RIVA Tech en WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1a13 13 0 0 1-5-4.4c-.4-.6-.9-1.5-.9-2.4 0-.9.5-1.4.7-1.6.2-.2.4-.3.6-.3h.4c.2 0 .3 0 .5.4l.7 1.6c0 .2 0 .3-.1.5l-.3.4-.2.3c-.1.1-.2.3 0 .5.2.4.8 1.2 1.6 1.9 1 .9 1.8 1.1 2 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.5-.1l1.6.8c.2.1.3.2.4.3 0 .1 0 .5-.2 1z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        ============================================================ -->
+          </aside>
+
+          <!-- Formulario -->
+          <div data-reveal="right">
+            <form class="form" id="contactForm" novalidate>
+
+              <!-- Honeypot antispam (invisible para personas) -->
+              <div class="hp" aria-hidden="true">
+                <label for="website">No llenar este campo</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="form__grid form__grid--2">
+                <div class="field">
+                  <label for="nombre">Nombre <span class="req" aria-hidden="true">*</span></label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name"
+                    required aria-describedby="err-nombre">
+                  <span class="field__error" id="err-nombre">Escribe tu nombre.</span>
+                </div>
+
+                <div class="field">
+                  <label for="empresa">Empresa</label>
+                  <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa"
+                    autocomplete="organization">
+                </div>
+              </div>
+
+              <div class="form__grid form__grid--2" style="margin-top:var(--sp-4)">
+                <div class="field">
+                  <label for="email">Correo <span class="req" aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="tucorreo@empresa.com" autocomplete="email"
+                    required aria-describedby="err-email">
+                  <span class="field__error" id="err-email">Escribe un correo válido.</span>
+                </div>
+
+                <div class="field">
+                  <label for="telefono">Teléfono</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="+52 612 000 0000" autocomplete="tel"
+                    aria-describedby="err-telefono">
+                  <span class="field__error" id="err-telefono">Revisa el formato del teléfono.</span>
+                </div>
+              </div>
+
+              <div class="form__grid" style="margin-top:var(--sp-4)">
+                <div class="field">
+                  <label for="mensaje">Mensaje <span class="req" aria-hidden="true">*</span></label>
+                  <textarea id="mensaje" name="mensaje"
+                    placeholder="Cuéntanos qué necesitas: el proceso que quieres mejorar, el sistema que tienes hoy o la idea que traes en mente."
+                    required aria-describedby="err-mensaje"></textarea>
+                  <span class="field__error" id="err-mensaje">Cuéntanos un poco más (mínimo 10 caracteres).</span>
+                </div>
+              </div>
+
+              <label class="form__consent" for="consent">
+                <input type="checkbox" id="consent" name="consent" value="si" required>
+                <span>Autorizo a RIVA Tech a contactarme por correo o teléfono en relación con esta solicitud.</span>
+              </label>
+
+              <!-- ============================================================
+               GOOGLE reCAPTCHA
+               1. Obtén tu site key en https://www.google.com/recaptcha/admin
+               2. Descomenta el <script> del final del documento
+               3. Sustituye TU_SITE_KEY en el data-sitekey de abajo
+               Mientras tanto se muestra un marcador de posición.
+               ============================================================ -->
+              <div class="form__captcha">
+                <!-- <div class="g-recaptcha" data-sitekey="TU_SITE_KEY"></div> -->
+                <div class="captcha-placeholder">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="4" y="10" width="16" height="11" rx="2" />
+                    <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                  </svg>
+                  <span>Espacio reservado para Google reCAPTCHA — se activa al configurar el site key.</span>
+                </div>
+              </div>
+
+              <div class="form__actions">
+                <button class="btn btn--primary btn--block" type="submit" id="formSubmit">
+                  <span class="btn__spinner" aria-hidden="true"></span>
+                  Enviar mensaje
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </button>
+                <p class="form__note">Te respondemos en menos de 24 horas hábiles.</p>
+              </div>
+
+              <div class="form__status" id="formStatus" aria-live="polite"></div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+     FOOTER
+     Versión parcial reutilizable en components/footer.html
+     ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__top">
+
+        <div>
+          <a class="brand" href="#inicio" aria-label="RIVA Tech — inicio">
+            <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <g fill="none" stroke="#4D8DF6" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 13 L12 35" />
+                <path d="M12 13 L34 24" />
+                <path d="M12 35 L34 24" />
+              </g>
+              <circle cx="12" cy="13" r="5" fill="#4D8DF6" />
+              <circle cx="12" cy="35" r="5" fill="#2DD4BF" />
+              <circle cx="34" cy="24" r="5.6" fill="#0B1B2B" stroke="#2DD4BF" stroke-width="2.8" />
+            </svg>
+            <span class="brand__text"><strong>RIVA</strong><span>TECH</span></span>
+          </a>
+          <p class="footer__about">
+            Desarrollamos software a la medida para empresas que necesitan sistemas
+            hechos a su forma de trabajar. Web, móvil, datos e integraciones.
+          </p>
+        </div>
+
+        <nav aria-label="Enlaces del sitio">
+          <h2 class="footer__title">Sitio</h2>
+          <div class="footer__links">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+        </nav>
+
+        <div>
+          <h2 class="footer__title">Contacto</h2>
+          <div class="footer__links">
+            <a href="mailto:contacto@rivatech.mx">contacto@rivatech.mx</a>
+            <span>La Paz, Baja California Sur</span>
+            <span>México</span>
+            <span>Lun – Vie · 9:00 a 18:00</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; <span data-year>2026</span> RIVA Tech. Todos los derechos reservados.</span>
+        <span>Hecho en Baja California Sur, México.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Volver arriba -->
+  <button class="to-top" id="toTop" type="button" aria-label="Volver arriba">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+  <!-- Google reCAPTCHA — descomenta al configurar tu site key
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+-->
+
+</body>
+
+</html>

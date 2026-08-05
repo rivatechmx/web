@@ -1,0 +1,18 @@
+{
+  "name": "RIVA Tech — Desarrollo de software a la medida",
+  "short_name": "RIVA Tech",
+  "description": "Desarrollamos software, aplicaciones web y móviles a la medida para empresas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F7FA",
+  "theme_color": "#0F52BA",
+  "lang": "es-MX",
+  "icons": [
+    {
+      "src": "/assets/logo/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
