@@ -936,6 +936,7 @@ p {
   border-radius: var(--r-md);
   background: var(--surface);
   box-shadow: var(--sh-xs);
+  text-align: center;
   transition: transform var(--t-med) var(--ease-out),
     box-shadow var(--t-med) var(--ease), border-color var(--t-med) var(--ease);
 }
@@ -951,7 +952,7 @@ p {
   .step:not(:last-child)::after {
     content: "";
     position: absolute;
-    top: 44px;
+    top: 56px;
     right: calc(var(--sp-3) * -1 - 1px);
     width: var(--sp-3);
     height: 2px;
@@ -962,13 +963,13 @@ p {
 .step__num {
   display: inline-grid;
   place-items: center;
-  width: 26px;
-  height: 26px;
+  width: 34px;
+  height: 34px;
   margin-bottom: var(--sp-3);
   border-radius: 50%;
   background: var(--ink);
   color: #fff;
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   font-weight: 800;
   font-variant-numeric: tabular-nums;
 }
@@ -976,6 +977,12 @@ p {
 .step__icon {
   margin-bottom: var(--sp-3);
   color: var(--blue);
+}
+
+.step__icon svg {
+  width: 30px;
+  height: 30px;
+  margin-inline: auto;
 }
 
 .step__title {
