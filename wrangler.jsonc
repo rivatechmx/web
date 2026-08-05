@@ -1,0 +1,11 @@
+{
+    // Configuración de despliegue de rivatech.mx en Cloudflare Workers (Static Assets).
+    // Cada push a la rama main republica el contenido de ./public
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "rivatech-web",
+    "compatibility_date": "2026-08-03",
+    "assets": {
+        "directory": "./public",
+        "not_found_handling": "404-page"
+    }
+}
