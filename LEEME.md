@@ -4,26 +4,31 @@ HTML5 + CSS3 + JavaScript Vanilla. Sin frameworks, sin librerías externas, sin 
 
 ## Cómo verlo
 
-Doble clic en `index.html`. Funciona directamente desde el sistema de archivos.
+Doble clic en `public/index.html`. Funciona directamente desde el sistema de archivos.
+En producción, Cloudflare publica el contenido de `public/` según `wrangler.jsonc`
+(ver [README.md](README.md)).
 
 ## Estructura
 
 ```
-index.html            Página completa (header y footer en línea)
-css/variables.css     Design tokens: color, tipografía, espacio, sombras
-css/style.css         Estilos por sección
-css/animations.css    Keyframes y reveals al hacer scroll
-js/main.js            Navbar, menú móvil, scrollspy, formulario, back-to-top
-js/animations.js      IntersectionObserver, contadores, parallax del hero
-components/           Parciales de header y footer (referencia para backend)
-assets/logo/          Isotipo, logo horizontal y favicon en SVG
-assets/images/        Imagen de Open Graph (1200×630)
-robots.txt · sitemap.xml · site.webmanifest
+wrangler.jsonc              Configuración de despliegue en Cloudflare
+public/
+├── index.html               Página completa (header y footer en línea)
+├── 404.html                 Página de error
+├── css/variables.css        Design tokens: color, tipografía, espacio, sombras
+├── css/style.css            Estilos por sección
+├── css/animations.css       Keyframes y reveals al hacer scroll
+├── js/main.js               Navbar, menú móvil, scrollspy, formulario, back-to-top
+├── js/animations.js         IntersectionObserver, contadores, parallax del hero
+├── components/              Parciales de header y footer (referencia para backend)
+├── assets/logo/             Isotipo, logo horizontal y favicon en SVG
+├── assets/images/           Imagen de Open Graph (1200×630)
+└── robots.txt · sitemap.xml · site.webmanifest
 ```
 
-`components/header.html` y `footer.html` son la fuente de verdad para cuando
+`public/components/header.html` y `footer.html` son la fuente de verdad para cuando
 migres a un backend con includes. Mientras el sitio sea estático, el markup vive
-en línea dentro de `index.html` para que abra sin servidor. **Si editas uno,
+en línea dentro de `public/index.html` para que abra sin servidor. **Si editas uno,
 replica el cambio en el otro.**
 
 ## Identidad

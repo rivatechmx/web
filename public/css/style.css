@@ -1497,8 +1497,15 @@ a.info__value:hover {
   transform: translateY(-3px);
 }
 
-/* Preloader */
+/* Preloader
+   Oculto por defecto. Solo se muestra cuando <html> tiene la clase .js,
+   que añade el script inline del <head>. Sin JavaScript el loader nunca
+   aparece y el contenido queda visible de inmediato. */
 .loader {
+  display: none;
+}
+
+.js .loader {
   position: fixed;
   inset: 0;
   z-index: var(--z-loader);
@@ -1512,6 +1519,12 @@ a.info__value:hover {
 .loader.is-done {
   opacity: 0;
   visibility: hidden;
+}
+
+/* Una vez terminada la transición, main.js pone el atributo hidden.
+   Este selector garantiza que se saque del flujo de verdad. */
+.js .loader[hidden] {
+  display: none;
 }
 
 .loader__inner {

@@ -38,19 +38,33 @@
     var loader = $("#loader");
     if (!loader) return;
 
+    var done = false;
+
     var hide = function () {
+      if (done) return;
+      done = true;
       loader.classList.add("is-done");
       window.setTimeout(function () {
         loader.setAttribute("hidden", "");
       }, 500);
     };
 
-    // Nunca dejar la pantalla bloqueada más de 2s aunque algo falle
-    var safety = window.setTimeout(hide, 2000);
+    // Red de seguridad: el sitio es estático, no hay nada que justifique
+    // tapar el contenido más allá de este margen. Un límite alto retrasa
+    // el LCP porque el elemento medido pasa a ser el loader, no el <h1>.
+    var safety = window.setTimeout(hide, 800);
+
+    // Si el documento ya terminó de cargar (caché, bfcache), no esperamos
+    // un evento 'load' que quizá ya ocurrió.
+    if (document.readyState === "complete") {
+      hide();
+      window.clearTimeout(safety);
+      return;
+    }
 
     window.addEventListener("load", function () {
       window.clearTimeout(safety);
-      window.setTimeout(hide, 220);
+      window.setTimeout(hide, 120);
     });
   }
 

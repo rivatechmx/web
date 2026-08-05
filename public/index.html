@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0F52BA">
 
+  <!-- Marca de JavaScript disponible.
+       Debe ir ANTES de los estilos: el preloader y las animaciones de entrada
+       solo se activan si esta clase existe, de modo que sin JS el sitio se ve
+       completo en lugar de quedar en blanco. -->
+  <script>document.documentElement.classList.add('js');</script>
+
   <title>RIVA Tech — Desarrollo de software a la medida para empresas</title>
   <meta name="description"
     content="RIVA Tech desarrolla software a la medida, aplicaciones web y móviles, análisis de datos e integraciones para empresas. Consultoría tecnológica en La Paz, Baja California Sur.">
@@ -205,17 +211,20 @@
             Primera consulta y estimación sin costo ni compromiso.
           </p>
 
+          <!-- Los valores finales van escritos en el HTML: sin JavaScript se
+               leen correctamente. js/animations.js los pone en 0 y los anima
+               solo cuando entran en pantalla. -->
           <div class="hero__stats" data-hero="5">
             <div class="stat">
-              <span class="stat__num"><span data-count="10" data-suffix="+">0</span></span>
+              <span class="stat__num"><span data-count="10" data-suffix="+">10+</span></span>
               <span class="stat__label">Años de experiencia del equipo</span>
             </div>
             <div class="stat">
-              <span class="stat__num"><span data-count="4" data-suffix="">0</span></span>
+              <span class="stat__num"><span data-count="4" data-suffix="">4</span></span>
               <span class="stat__label">Industrias atendidas</span>
             </div>
             <div class="stat">
-              <span class="stat__num"><span data-count="100" data-suffix="%">0</span></span>
+              <span class="stat__num"><span data-count="100" data-suffix="%">100%</span></span>
               <span class="stat__label">Código propio, sin plantillas</span>
             </div>
           </div>

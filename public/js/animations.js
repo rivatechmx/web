@@ -41,12 +41,28 @@
       if (delay) el.style.setProperty("--reveal-delay", delay + "ms");
     });
 
+    // Duración de la transición más larga declarada en animations.css (0.7s)
+    // más el retraso escalonado máximo (490ms), con un pequeño margen.
+    var ANIM_MS = 1300;
+
     var observer = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
           if (!entry.isIntersecting) return;
-          entry.target.classList.add("is-in");
-          observer.unobserve(entry.target); // una sola vez
+
+          var el = entry.target;
+
+          // will-change solo mientras la animación corre: pedirle al
+          // navegador una capa de composición permanente para decenas de
+          // elementos gasta memoria de GPU sin ganar nada.
+          el.classList.add("is-animating");
+          el.classList.add("is-in");
+
+          window.setTimeout(function () {
+            el.classList.remove("is-animating");
+          }, ANIM_MS);
+
+          observer.unobserve(el); // una sola vez
         });
       },
       { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }

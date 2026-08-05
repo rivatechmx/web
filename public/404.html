@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0F52BA">
+
+  <title>Página no encontrada · RIVA Tech</title>
+  <meta name="robots" content="noindex">
+
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .error-page {
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: var(--sp-4);
+      padding: var(--sp-8) var(--gutter);
+    }
+
+    .error-page__code {
+      color: var(--blue);
+      font-size: clamp(3rem, 8vw, 5rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="error-page">
+    <a class="brand" href="/" aria-label="RIVA Tech — inicio">
+      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="#0F52BA" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 13 L12 35" />
+          <path d="M12 13 L34 24" />
+          <path d="M12 35 L34 24" />
+        </g>
+        <circle cx="12" cy="13" r="5" fill="#0F52BA" />
+        <circle cx="12" cy="35" r="5" fill="#0E4F63" />
+        <circle cx="34" cy="24" r="5.6" fill="#F5F7FA" stroke="#14B8A6" stroke-width="2.8" />
+      </svg>
+      <span class="brand__text"><strong>RIVA</strong><span>TECH</span></span>
+    </a>
+
+    <p class="error-page__code">404</p>
+    <h1 class="section-title">Esta página no existe</h1>
+    <p class="section-sub">Puede que el enlace esté mal escrito o que la hayamos movido.</p>
+
+    <a class="btn btn--primary" href="/">
+      Volver al inicio
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 12h14M13 6l6 6-6 6" />
+      </svg>
+    </a>
+  </main>
+
+</body>
+
+</html>
