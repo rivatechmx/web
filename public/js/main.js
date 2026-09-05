@@ -7,7 +7,7 @@
    - navbar (scroll, progreso, menú móvil, scrollspy)
    - back to top
    - año del footer
-   - formulario de contacto (validación + envío preparado)
+   - scroll suave para anclas
    ========================================================================== */
 
 (function () {
@@ -18,17 +18,6 @@
   };
   var $$ = function (sel, ctx) {
     return Array.prototype.slice.call((ctx || document).querySelectorAll(sel));
-  };
-
-  /* ------------------------------------------------------------------
-     CONFIGURACIÓN
-     Cuando exista backend, cambia FORM_ENDPOINT por la URL real
-     (por ejemplo "/api/contacto" o un servicio tipo Formspree).
-     Con null, el formulario valida y muestra confirmación sin enviar.
-     ------------------------------------------------------------------ */
-  var CONFIG = {
-    FORM_ENDPOINT: null,
-    RECAPTCHA_SITE_KEY: "" // pega aquí tu site key de Google reCAPTCHA v2
   };
 
   /* ==================================================================

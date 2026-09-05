@@ -1,41 +1,79 @@
 # rivatech.mx
 
-Sitio de RIVA Tech. HTML5, CSS3 y JavaScript vanilla, sin frameworks ni paso de compilación.
+Sitio corporativo de **RIVA Tech**. HTML5, CSS3 y JavaScript vanilla.
+Sin frameworks, sin dependencias, sin paso de compilación.
+
+- **Producción:** https://rivatech.mx · https://www.rivatech.mx
+- **Repositorio:** https://github.com/rivatechmx/web
+- **Hosting:** Cloudflare Workers (Static Assets)
+
+---
+
+## Empezar en 30 segundos
+
+```bash
+git clone https://github.com/rivatechmx/web.git
+cd web
+```
+
+Abre `public/index.html` con doble clic. **No hace falta servidor ni instalar nada.**
+Todo el sitio funciona bajo el protocolo `file://`.
+
+---
+
+## Las cuatro reglas que no se rompen
+
+1. **Sin build.** Cloudflare copia `public/` tal cual. No agregues npm, bundlers ni preprocesadores.
+2. **Sin dependencias.** Cero librerías JS. Los iconos son SVG en línea. La única carga externa es Google Fonts.
+3. **Rutas relativas** en `index.html` (`css/style.css`, no `/css/style.css`), para que el sitio abra con doble clic.
+4. **Nunca toques los registros MX ni TXT del DNS.** Ahí vive el correo de la empresa. Ver [LEEME.md](LEEME.md#infraestructura).
+
+---
 
 ## Estructura
 
 ```
-wrangler.jsonc          Configuración de despliegue en Cloudflare
-public/                 Todo lo que se publica
-├── index.html          Página de inicio
-├── 404.html            Página de error
+wrangler.jsonc            Despliegue: dominios propios y carpeta a publicar
+public/                   Todo lo que se sirve
+├── index.html            Página única, con todas las secciones
+├── 404.html              Página de error
 ├── css/
-│   ├── variables.css   Design tokens: color, tipografía, espacio, sombras
-│   ├── style.css       Estilos por sección
-│   └── animations.css  Keyframes y reveals al hacer scroll
+│   ├── variables.css     Design tokens: color, tipografía, espacio, sombras
+│   ├── style.css         Estilos por sección, en 15 bloques numerados
+│   └── animations.css    Keyframes y estados de reveal
 ├── js/
-│   ├── main.js         Navbar, menú móvil, scrollspy, formulario, back-to-top
-│   └── animations.js   IntersectionObserver, contadores, parallax del hero
-├── components/         Parciales de header y footer (referencia para backend)
-├── assets/logo/        Isotipo, logo horizontal y favicon en SVG
-├── assets/images/      Imagen de Open Graph (1200×630)
-├── site.webmanifest
-├── robots.txt
-└── sitemap.xml
+│   ├── main.js           Preloader, navbar, scrollspy, back-to-top, anclas
+│   └── animations.js     IntersectionObserver, contadores, parallax del hero
+├── components/           Parciales de header y footer (referencia, no se sirven)
+├── assets/logo/          Isotipo, logo horizontal y favicon en SVG
+├── assets/images/        Imagen Open Graph 1200×630
+└── robots.txt · sitemap.xml · site.webmanifest
 ```
 
-Ver [LEEME.md](LEEME.md) para identidad visual, design tokens y pendientes de configuración (formulario de contacto, reCAPTCHA, redes sociales).
+Peso total: **196 KB**.
 
-## Despliegue
+---
 
-Cada push a `main` republica el sitio automáticamente en Cloudflare.
-No hay comando de compilación: Cloudflare copia el contenido de `public/` tal cual.
+## Publicar
 
-## Trabajar en local
+```bash
+git add -A && git commit -m "descripcion del cambio" && git push
+```
 
-No hace falta servidor. Abre `public/index.html` directamente en el navegador.
+Eso es todo. El push a `main` dispara el despliegue en Cloudflare y el sitio queda
+actualizado en unos **40 segundos**. No hay comando de compilación.
 
-## Dominio
+Verificar que salió:
 
-- Producción: https://rivatech.mx
-- DNS y CDN administrados en Cloudflare
+```bash
+curl -s https://rivatech.mx | grep -o '<title>[^<]*</title>'
+```
+
+---
+
+## Documentación
+
+| Archivo | Para qué |
+|---|---|
+| [AGENTS.md](AGENTS.md) | **Empieza aquí si eres un agente.** Reglas, flujo de trabajo y dónde tocar cada cosa |
+| [LEEME.md](LEEME.md) | Referencia completa: design system, anatomía, infraestructura y verificación |
